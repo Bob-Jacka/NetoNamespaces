@@ -2,10 +2,9 @@
 
 using namespace std;
 
-static int funcCount = 1;
-
 void counting_function() 
 {
+    static int funcCount = 1;
     cout <<  "Количество вызовов функции counting_function(): " << funcCount << endl;
     funcCount++;
 }
